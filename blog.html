@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes | Blog de Destinos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles_blogs.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">Viajes</div>
+            <nav aria-label="Navegación principal">
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="agencias.html">Agencias</a></li>
+                    <li><a href="precios.html">Precios</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" aria-label="Alternar modo oscuro">🌙</button>
+        </div>
+    </header>
+
+    <main class="blog-container">
+        <header class="blog-header">
+            <h1>Blog de Viajeros</h1>
+            <p>Inspiración, guías y consejos para tu próxima aventura.</p>
+        </header>
+
+        <div class="css-filtros">
+            <input type="radio" name="categoria" id="cat-todas" checked>
+            <input type="radio" name="categoria" id="cat-guias">
+            <input type="radio" name="categoria" id="cat-tips">
+            <input type="radio" name="categoria" id="cat-noticias">
+
+            <div class="filtros-labels">
+                <label for="cat-todas">Todas</label>
+                <label for="cat-guias">Guías</label>
+                <label for="cat-tips">Tips</label>
+                <label for="cat-noticias">Noticias</label>
+            </div>
+
+            <section class="newspaper-grid">
+                
+                <article class="post post-featured cat-guias reveal-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&q=80" alt="Mochilero">
+                    <div class="post-contenido">
+                        <span class="categoria">Guías</span>
+                        <h2>La guía definitiva para recorrer la Quebrada de Humahuaca</h2>
+                        <p>Todo lo que necesitás saber para disfrutar de los paisajes y la cultura del norte argentino sin perderte de nada.</p>
+                        <a href="#comentarios" class="read-more">Leer más</a>
+                    </div>
+                </article>
+
+                <article class="post cat-tips reveal-on-scroll">
+                    <img src="https://missairesnuevos.com/wp-content/uploads/Que-llevar-en-la-maleta-de-viaje.webp" alt="Equipaje">
+                    <div class="post-contenido">
+                        <span class="categoria">Tips</span>
+                        <h3>Cómo armar la valija perfecta</h3>
+                        <p>Llevá solo lo necesario y evitá cargos extra en tus vuelos con estos simples consejos de organización.</p>
+                    </div>
+                </article>
+
+                <article class="post cat-noticias reveal-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=400&q=80" alt="Avión">
+                    <div class="post-contenido">
+                        <span class="categoria">Noticias</span>
+                        <h3>Nuevas rutas aéreas low-cost</h3>
+                        <p>Se anunciaron nuevos vuelos directos desde Córdoba hacia destinos internacionales. Enterate de los detalles.</p>
+                    </div>
+                </article>
+
+                <article class="post cat-guias reveal-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?w=400&q=80" alt="Desierto">
+                    <div class="post-contenido">
+                        <span class="categoria">Guías</span>
+                        <h3>Secretos del Sahara</h3>
+                        <p>Una experiencia inmersiva acampando bajo las estrellas en el desierto más grande del mundo.</p>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+        <hr class="separador">
+
+        <section id="comentarios" class="seccion-comentarios reveal-on-scroll">
+            <h2>Comentarios</h2>
+            
+            <div class="comentario">
+                <div class="css-avatar" data-initials="MR"></div>
+                <div class="comment-body">
+                    <h4>Martina Ríos</h4>
+                    <p>¡Excelente artículo! Me sirvió muchísimo la guía para mi viaje a Jujuy la semana que viene.</p>
+                </div>
+            </div>
+
+            <div class="comentario">
+                <div class="css-avatar" data-initials="LP"></div>
+                <div class="comment-body">
+                    <h4>Lucas Pérez</h4>
+                    <p>¿Tienen recomendaciones de alojamientos económicos por la zona?</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Universidad Nacional de Jujuy - Facultad de Ingeniería</p>
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        toggleBtn.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            toggleBtn.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>

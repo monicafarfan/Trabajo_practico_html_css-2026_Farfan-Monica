@@ -1,0 +1,124 @@
+/* contenedores */
+.container-agencias {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.intro-agencias {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.grid-agencias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    perspective: 1000px; /* PAra el 3d */
+}
+
+/* Animacion para flip */
+.card-agencia {
+    height: 400px;
+    background-color: transparent;
+}
+
+.card-agencia-contenido {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d; /* Mantiene el 3D */
+    box-shadow: 0 4px 15px var(--hover-shadow);
+    border-radius: 15px;
+}
+
+/* Efecto cuando pasamos el mouse por arriba */
+.card-agencia:hover .card-agencia-contenido {
+    transform: rotateY(180deg);
+}
+
+.card-agencia-frente, .card-agencia-dorso {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Oculta la cara trasera al rotar */
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 15px;
+    background: var(--card-bg);
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.card-agencia-frente img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid var(--accent-color);
+}
+
+.card-agencia-dorso {
+    transform: rotateY(180deg); /* El dorso empieza rotado */
+    background: var(--section-bg);
+}
+
+.card-agencia-dorso h4 {
+    margin-bottom: 15px;
+    color: var(--accent-color);
+}
+
+/* Para las estrellas */
+.estrellas-css {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.estrellas-css input {
+    display: none;
+}
+
+.estrellas-css label {
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s, transform 0.2s;
+}
+
+/* Efecto hover y check en estrellas */
+.estrellas-css label:hover,
+.estrellas-css label:hover ~ label,
+.estrellas-css input:checked ~ label {
+    color: #ffca08;
+    transform: scale(1.1);
+}
+
+/* Animación al hacer click */
+.estrellas-css label:active {
+    transform: scale(1.3);
+}
+
+/* Botón de la tarjeta */
+.btn-agency {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+.btn-agency:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes | Agencias</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles_agencias.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">Viajes</div>
+            <nav aria-label="Navegación principal">
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="agencias.html" class="active">Agencias</a></li>
+                    <li><a href="precios.html">Precios</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" aria-label="Alternar modo oscuro">🌙</button>
+        </div>
+    </header>
+
+    <main class="container-agencias">
+        <section class="intro-agencias">
+            <h1>Nuestras Agencias Asociadas</h1>
+            <p>Conocé a los expertos que harán realidad tu próximo viaje.</p>
+        </section>
+
+        <section class="grid-agencias">
+            <article class="card-agencia">
+                <div class="card-agencia-contenido">
+                    <div class="card-agencia-frente">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&q=80" alt="Córdoba Tours">
+                        <h3>Córdoba Tours</h3>
+                        <p>Expertos en sierras</p>
+                    </div>
+                    <div class="card-agencia-dorso">
+                        <h4>Detalles</h4>
+                        <p>Especialistas en turismo aventura y cabalgatas por Traslasierra.</p>
+                        <div class="estrellas-css">
+                            <input type="radio" name="rating1" id="r1-5"><label for="r1-5">★</label>
+                            <input type="radio" name="rating1" id="r1-4"><label for="r1-4">★</label>
+                            <input type="radio" name="rating1" id="r1-3" checked><label for="r1-3">★</label>
+                            <input type="radio" name="rating1" id="r1-2"><label for="r1-2">★</label>
+                            <input type="radio" name="rating1" id="r1-1"><label for="r1-1">★</label>
+                        </div>
+                        <button class="btn-agency">Ver Perfil</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card-agencia">
+                <div class="card-agencia-contenido">
+                    <div class="card-agencia-frente">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80" alt="Despegar">
+                        <h3>Despegar</h3>
+                        <p>Líder internacional</p>
+                    </div>
+                    <div class="card-agencia-dorso">
+                        <h4>Detalles</h4>
+                        <p>Vuelos, hoteles y paquetes a cualquier rincón del mundo con financiación.</p>
+                        <div class="estrellas-css">
+                            <input type="radio" name="rating2" id="r2-5" checked><label for="r2-5">★</label>
+                            <input type="radio" name="rating2" id="r2-4"><label for="r2-4">★</label>
+                            <input type="radio" name="rating2" id="r2-3"><label for="r2-3">★</label>
+                            <input type="radio" name="rating2" id="r2-2"><label for="r2-2">★</label>
+                            <input type="radio" name="rating2" id="r2-1"><label for="r2-1">★</label>
+                        </div>
+                        <button class="btn-agency">Ver Perfil</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card-agencia">
+                <div class="card-agencia-contenido">
+                    <div class="card-agencia-frente">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80" alt="Viajes Centro">
+                        <h3>Viajes Centro</h3>
+                        <p>Atención personalizada</p>
+                    </div>
+                    <div class="card-agencia-dorso">
+                        <h4>Detalles</h4>
+                        <p>Agencia boutique enfocada en viajes grupales y tercera edad.</p>
+                        <div class="estrellas-css">
+                            <input type="radio" name="rating3" id="r3-5"><label for="r3-5">★</label>
+                            <input type="radio" name="rating3" id="r3-4" checked><label for="r3-4">★</label>
+                            <input type="radio" name="rating3" id="r3-3"><label for="r3-3">★</label>
+                            <input type="radio" name="rating3" id="r3-2"><label for="r3-2">★</label>
+                            <input type="radio" name="rating3" id="r3-1"><label for="r3-1">★</label>
+                        </div>
+                        <button class="btn-agency">Ver Perfil</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Universidad Nacional de Jujuy - Facultad de Ingeniería</p>
+    </footer >
+
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        toggleBtn.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            toggleBtn.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes | Destinos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_destinos.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">Viajes</div>
+            <nav aria-label="Navegación principal">
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="destinos.html" class="active">Destinos</a></li>
+                    <li><a href="agencias.html">Agencias</a></li>
+                    <li><a href="precios.html">Precios</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" aria-label="Alternar modo oscuro">🌙</button>
+        </div>
+    </header>
+
+    <main class="destinos-container">
+        
+        <header class="destinos-header">
+            <h1>Explorá nuestros destinos</h1>
+            <p>Encontrá el lugar perfecto para tu próxima aventura usando nuestros filtros.</p>
+        </header>
+
+        <section class="filtros-wrapper">
+            
+            <input type="radio" name="categoria" id="cat-todos" checked>
+            <input type="radio" name="categoria" id="cat-cultural">
+            <input type="radio" name="categoria" id="cat-naturaleza">
+            <input type="radio" name="categoria" id="cat-playa">
+            <input type="radio" name="categoria" id="cat-gastro">
+            <input type="radio" name="categoria" id="cat-religioso">
+
+            <div class="filtros-labels">
+                <label for="cat-todos">Todos</label>
+                <label for="cat-cultural">Cultural</label>
+                <label for="cat-naturaleza">Naturaleza</label>
+                <label for="cat-playa">Sol y Playa</label>
+                <label for="cat-gastro">Gastronómico</label>
+                <label for="cat-religioso">Religioso</label>
+            </div>
+
+            <div class="masonry-grid">
+                
+                <article class="destino-card cat-cultural h-tall">
+                    <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=600&q=80" alt="Ruinas de Machu Picchu">
+                    <div class="overlay">
+                        <h3>Machu Picchu</h3>
+                        <p>Cuna del imperio Inca y maravilla del mundo.</p>
+                        <button>Ver paquete</button>
+                    </div>
+                </article>
+
+                <article class="destino-card cat-playa h-normal">
+                    <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&q=80" alt="Playas del Caribe">
+                    <div class="overlay">
+                        <h3>Caribe</h3>
+                        <p>Arena blanca y mar cristalino.</p>
+                        <button>Ver paquete</button>
+                    </div>
+                </article>
+
+                <article class="destino-card cat-naturaleza h-tall">
+                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&q=80" alt="Paisaje de Montaña">
+                    <div class="overlay">
+                        <h3>Patagonia</h3>
+                        <p>Glaciares, montañas y lagos del fin del mundo.</p>
+                        <button>Ver paquete</button>
+                    </div>
+                </article>
+
+                <article class="destino-card cat-gastro h-normal">
+                    <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600&q=80" alt="Vino y viñedos">
+                    <div class="overlay">
+                        <h3>Mendoza</h3>
+                        <p>Ruta del vino y la mejor gastronomía.</p>
+                        <button>Ver paquete</button>
+                    </div>
+                </article>
+
+                <article class="destino-card cat-religioso h-normal">
+                    <img src="https://images.unsplash.com/photo-1548625361-ec858760b2eb?w=600&q=80" alt="Basílica">
+                    <div class="overlay">
+                        <h3>El Vaticano</h3>
+                        <p>Historia, arte y peregrinación.</p>
+                        <button>Ver paquete</button>
+                    </div>
+                </article>
+
+                <article class="destino-card cat-cultural h-tall">
+                    <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80" alt="París">
+                    <div class="overlay">
+                        <h3>París</h3>
+                        <p>La ciudad luz, repleta de arte y cultura.</p>
+                        <button>Ver paquete</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="tabla-section">
+            <h2>Tarifario Referencial</h2>
+            <p>Compará precios por cantidad de días según el destino.</p>
+            
+            <table class="tabla-responsiva">
+                <thead>
+                    <tr>
+                        <th>Destino</th>
+                        <th>Categoría</th>
+                        <th>Duración</th>
+                        <th>Precio (Base)</th>
+                        <th>Disponibilidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Destino">Machu Picchu</td>
+                        <td data-label="Categoría">Cultural</td>
+                        <td data-label="Duración">7 Días</td>
+                        <td data-label="Precio (Base)">$850 USD</td>
+                        <td data-label="Disponibilidad">Alta</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Destino">Caribe</td>
+                        <td data-label="Categoría">Sol y Playa</td>
+                        <td data-label="Duración">10 Días</td>
+                        <td data-label="Precio (Base)">$1,200 USD</td>
+                        <td data-label="Disponibilidad">Media</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Destino">Mendoza</td>
+                        <td data-label="Categoría">Gastronómico</td>
+                        <td data-label="Duración">4 Días</td>
+                        <td data-label="Precio (Base)">$300 USD</td>
+                        <td data-label="Disponibilidad">Alta</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Destino">Patagonia</td>
+                        <td data-label="Categoría">Naturaleza</td>
+                        <td data-label="Duración">12 Días</td>
+                        <td data-label="Precio (Base)">$950 USD</td>
+                        <td data-label="Disponibilidad">Baja</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Universidad Nacional de Jujuy - Facultad de Ingeniería</p>
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        toggleBtn.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            toggleBtn.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>

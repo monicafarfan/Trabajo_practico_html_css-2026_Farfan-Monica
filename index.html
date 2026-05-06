@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes | Inicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">Viajes</div>
+            
+            <nav aria-label="Navegación principal">
+                <ul class="menu">
+                    <li>
+                        <a href="destinos.html" aria-haspopup="true" aria-expanded="false">Destinos</a>
+                        <div class="mega-menu" aria-label="Submenú de Destinos">
+                            <div class="mega-content">
+                                <div class="column">
+                                    <h4>Argentina</h4>
+                                    <a href="#">Córdoba</a>
+                                    <a href="#">Bariloche</a>
+                                    <a href="#">Mendoza</a>
+                                </div>
+                                <div class="column">
+                                    <h4>Internacional</h4>
+                                    <a href="#">Brasil</a>
+                                    <a href="#">Europa</a>
+                                    <a href="#">Estados Unidos</a>
+                                </div>
+                                <div class="column">
+                                    <h4>Populares</h4>
+                                    <a href="#">Playas</a>
+                                    <a href="#">Montaña</a>
+                                    <a href="#">Ciudades</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="agencias.html" aria-haspopup="true" aria-expanded="false">Agencias</a>
+                        <div class="mega-menu">
+                            <div class="mega-content">
+                                <div class="column">
+                                    <h4>Locales</h4>
+                                    <a href="#">Córdoba Tours</a>
+                                    <a href="#">Viajes Centro</a>
+                                </div>
+                                <div class="column">
+                                    <h4>Internacionales</h4>
+                                    <a href="#">Despegar</a>
+                                    <a href="#">Booking</a>
+                                </div>
+                                <div class="column">
+                                    <h4>Servicios</h4>
+                                    <a href="#">Paquetes</a>
+                                    <a href="#">Hoteles</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="precios.html" aria-haspopup="true" aria-expanded="false">Precios</a>
+                        <div class="mega-menu">
+                            <div class="mega-content">
+                                <div class="column">
+                                    <h4>Ofertas</h4>
+                                    <a href="#">Último momento</a>
+                                    <a href="#">Descuentos</a>
+                                </div>
+                                <div class="column">
+                                    <h4>Planes</h4>
+                                    <a href="#">Económico</a>
+                                    <a href="#">Premium</a>
+                                </div>
+                                <div class="column">
+                                    <h4>Pagos</h4>
+                                    <a href="#">Tarjeta</a>
+                                    <a href="#">Cuotas</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <button id="theme-toggle" aria-label="Alternar modo oscuro">🌙</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="video" aria-label="Sección de bienvenida">
+            <video autoplay muted loop playsinline>
+                <source src="video.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+
+            <div class="video-content">
+                <h1>Descubrí el mundo</h1>
+                <p>Viajes únicos a tu medida</p>
+            </div>
+        </section>
+
+        <section class="contador" aria-label="Estadísticas de la agencia">
+            <div class="contador-item">
+                <h2 class="numero" style="--target: 500;"></h2>
+                <p>Visitantes</p>
+            </div>
+            <div class="contador-item">
+                <h2 class="numero" style="--target: 120;"></h2>
+                <p>Destinos</p>
+            </div>
+            <div class="contador-item">
+                <h2 class="numero" style="--target: 50;"></h2>
+                <p>Agencias</p>
+            </div>
+        </section>
+
+        <section class="destinos" aria-labelledby="destinos-title">
+            <h2 id="destinos-title">Destinos destacados</h2>
+            <div class="cards">
+                <article class="card">
+                    <img src="https://blogimagestc.s3.amazonaws.com/sierras%20de%20cordoba.jpg" alt="Paisaje de Córdoba">
+                    <h3>Córdoba</h3>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=400&q=80" alt="Playa en Brasil">
+                    <h3>Brasil</h3>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&q=80" alt="Arquitectura en Europa">
+                    <h3>Europa</h3>
+                </article>
+            </div>
+        </section>
+
+        <section class="testimonios" aria-labelledby="testimonios-title">
+            <h2 id="testimonios-title">Testimonios</h2>
+            <div class="carrusel">
+                <div class="slides">
+                    <article class="slide">
+                        <p>"El mejor viaje de mi vida"</p>
+                        <h4>- Ana</h4>
+                    </article>
+                    <article class="slide">
+                        <p>"Todo organizado perfecto"</p>
+                        <h4>- Juan</h4>
+                    </article>
+                    <article class="slide">
+                        <p>"Volvería a contratar sin dudar"</p>
+                        <h4>- María</h4>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-section">
+            <h3>Suscribite</h3>
+            <form class="newsletter-form">
+                <label for="newsletter-email" class="sr-only">Tu email</label>
+                <input type="email" id="newsletter-email" placeholder="Tu email" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <div class="footer-section">
+            <h3>Seguinos</h3>
+            <ul class="social-links">
+                <li><a href="#" aria-label="Ir a Instagram">Instagram</a></li>
+                <li><a href="#" aria-label="Ir a Facebook">Facebook</a></li>
+                <li><a href="#" aria-label="Ir a Twitter">Twitter</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Ubicación</h3>
+            <iframe 
+                title="Mapa de ubicación de la agencia"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115456.4023158021!2d-65.3789078696805!3d-24.183204900000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f49646b1c0b%3A0x86bd615bb5542cc4!2sSan%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses-419!2sar!4v1714400000000!5m2!1ses-419!2sar"
+                width="250" 
+                height="200" 
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        toggleBtn.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            toggleBtn.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes | Planes y Precios</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles_precios.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">Viajes</div>
+            <nav aria-label="Navegación principal">
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="agencias.html">Agencias</a></li>
+                    <li><a href="precios.html" class="active">Precios</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" aria-label="Alternar modo oscuro">🌙</button>
+        </div>
+    </header>
+
+    <main class="precios-container">
+        <header class="precios-header">
+            <h1>Comparador de Planes</h1>
+            <p>Elegí el nivel de servicio que mejor se adapte a tu estilo de viaje y presupuesto.</p>
+        </header>
+
+        <section class="tabla-precios-wrapper">
+            <table class="tabla-comparativa">
+                <thead>
+                    <tr>
+                        <th>Características</th>
+                        <th>Plan Económico</th>
+                        <th>Plan Estándar</th>
+                        <th class="destacado">Plan Premium</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span class="tooltip" data-tooltip="Vuelos en aerolíneas regulares o low-cost">
+                                Vuelos Incluidos ℹ️
+                            </span>
+                        </td>
+                        <td>✔️ (Con escalas)</td>
+                        <td>✔️ (Directos)</td>
+                        <td>✔️ (Primera Clase)</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <span class="tooltip" data-tooltip="Tipo de habitación y categoría del hotel">
+                                Alojamiento ℹ️
+                            </span>
+                        </td>
+                        <td>Hostel / 2 Estrellas</td>
+                        <td>Hotel 3 o 4 Estrellas</td>
+                        <td>Resort 5 Estrellas</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="tooltip" data-tooltip="Actividades guiadas en el destino">
+                                Excursiones ℹ️
+                            </span>
+                        </td>
+                        <td>❌ No incluye</td>
+                        <td>1 Excursión base</td>
+                        <td>
+                            <span class="tooltip" data-tooltip="Incluye acceso ilimitado a todas las atracciones">
+                                Todas incluidas ℹ️
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="tooltip" data-tooltip="Cobertura médica ante accidentes o enfermedad">
+                                Seguro de Viaje ℹ️
+                            </span>
+                        </td>
+                        <td>Básico</td>
+                        <td>Completo</td>
+                        <td>VIP Internacional</td>
+                    </tr>
+
+                    <tr class="fila-precios">
+                        <td><strong>Precio Final</strong></td>
+                        <td><strong>Desde $500 USD</strong></td>
+                        <td><strong>Desde $900 USD</strong></td>
+                        <td class="destacado-precio"><strong>Desde $1500 USD</strong></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td><button class="btn-plan">Elegir Económico</button></td>
+                        <td><button class="btn-plan">Elegir Estándar</button></td>
+                        <td><button class="btn-plan destacado-btn">Elegir Premium</button></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Universidad Nacional de Jujuy - Facultad de Ingeniería</p>
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        toggleBtn.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            toggleBtn.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>
