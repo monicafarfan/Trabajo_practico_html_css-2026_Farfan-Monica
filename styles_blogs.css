@@ -73,7 +73,6 @@
 @media (min-width: 768px) {
     .post-featured {
         grid-column: span 2;
-        grid-row: span 2;
     }
     .post-featured h2 {
         font-size: 2.2rem;

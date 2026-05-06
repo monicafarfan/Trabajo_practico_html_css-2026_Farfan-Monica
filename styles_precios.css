@@ -15,11 +15,13 @@
 
 /*  Tabla comparativa */
 .tabla-precios-wrapper {
-    overflow-x: auto; /* Permite scroll horizontal cuando no entra la pagina */
+    padding: 30px; 
     background: var(--card-bg);
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     padding: 20px;
+    width: 100%;
+    max-width: 3500px;
 }
 
 .tabla-comparativa {
@@ -48,8 +50,8 @@
 }
 
 /* Efecto de resaltado en la fila al pasar el cursor */
-.tabla-comparativa tbody tr:hover {
-    background-color: rgba(0, 123, 255, 0.05);
+.tabla-comparativa tbody tr:hover td {
+    background-color: rgba(0, 0, 0, 0.04);
     transform: scale(1.01);
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     position: relative;
