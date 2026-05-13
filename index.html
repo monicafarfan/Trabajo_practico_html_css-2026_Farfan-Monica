@@ -6,97 +6,216 @@
     <title>Viajes | Inicio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
     <header>
-        <div class="navbar">
-            <div class="logo">Altura & Sakura</div>
-            
-            <nav aria-label="Navegación principal">
-                <ul class="menu">
-                    <li>
-                        <a href="destinos.html" aria-haspopup="true" aria-expanded="false">Destinos</a>
-                        <div class="mega-menu" aria-label="Submenú de Destinos">
-                            <div class="mega-content">
-                                <div class="column">
-                                    <h4>Argentina</h4>
-                                    <a href="#">Región andina</a>
-                                    <a href="#">Patagonia</a>
-                                    <a href="#">Cuyo</a>
-                                </div>
 
-                                <div class="column">
-                                    <h4>Japón</h4>
-                                    <a href="#">Tokio</a>
-                                    <a href="#">Kioto</a>
-                                    <a href="#">Osaka</a>
-                                </div>
+    <nav class="navbar navbar-expand-lg custom-navbar">
 
-                                <div class="column">
-                                    <h4>Selección</h4>
-                                    <a href="#">Paisajes costeros</a>
-                                    <a href="#">Montañas y trekking</a>
-                                    <a href="#">Ciudades culturales</a>
-                                </div>
-                            </div>
-                        </div>
+        <div class="container-fluid">
+
+            <!-- LOGO -->
+            <a class="navbar-brand logo" href="index.html">
+                Altura & Sakura
+            </a>
+
+            <!-- BOTÓN HAMBURGUESA -->
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuBootstrap"
+                aria-controls="menuBootstrap"
+                aria-expanded="false"
+                aria-label="Abrir menú">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- MENÚ -->
+            <div class="collapse navbar-collapse" id="menuBootstrap">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <!-- DESTINOS -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+
+                            Destinos
+
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+
+                            <li>
+                                <a class="dropdown-item" href="destinos.html">
+                                    Ver todos los destinos
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Tokio
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Kioto
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Osaka
+                                </a>
+                            </li>
+
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Patagonia
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Región Andina
+                                </a>
+                            </li>
+
+                        </ul>
+
                     </li>
 
-                    <li>
-                        <a href="agencias.html" aria-haspopup="true" aria-expanded="false">Agencias</a>
-                        <div class="mega-menu">
-                            <div class="mega-content">
-                                <div class="column">
-                                    <h4>Locales</h4>
-                                    <a href="#">Córdoba Tours</a>
-                                    <a href="#">Viajes Centro</a>
-                                </div>
-                                <div class="column">
-                                    <h4>Internacionales</h4>
-                                    <a href="#">Despegar</a>
-                                    <a href="#">Booking</a>
-                                </div>
-                                <div class="column">
-                                    <h4>Servicios</h4>
-                                    <a href="#">Paquetes</a>
-                                    <a href="#">Hoteles</a>
-                                </div>
-                            </div>
-                        </div>
+                    <!-- AGENCIAS -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+
+                            Agencias
+
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a class="dropdown-item" href="agencias.html">
+                                    Ver todas las agencias
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Córdoba Tours
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Viajes Centro
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Booking
+                                </a>
+                            </li>
+
+                        </ul>
+
                     </li>
 
-                    <li>
-                        <a href="precios.html" aria-haspopup="true" aria-expanded="false">Precios</a>
-                        <div class="mega-menu">
-                            <div class="mega-content">
-                                <div class="column">
-                                    <h4>Ofertas</h4>
-                                    <a href="#">Último momento</a>
-                                    <a href="#">Descuentos</a>
-                                </div>
-                                <div class="column">
-                                    <h4>Planes</h4>
-                                    <a href="#">Económico</a>
-                                    <a href="#">Premium</a>
-                                </div>
-                                <div class="column">
-                                    <h4>Pagos</h4>
-                                    <a href="#">Tarjeta</a>
-                                    <a href="#">Cuotas</a>
-                                </div>
-                            </div>
-                        </div>
+                    <!-- PRECIOS -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+
+                            Precios
+
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a class="dropdown-item" href="precios.html">
+                                    Ver todos los precios
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Económico
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Premium
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Ofertas
+                                </a>
+                            </li>
+
+                        </ul>
+
                     </li>
-                    
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+
+                    <!-- BLOG -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">
+                            Blog
+                        </a>
+                    </li>
+
+                    <!-- CONTACTO -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+
+                    <!-- BOTÓN MODO OSCURO -->
+                    <!--<li class="nav-item">
+                        <button id="theme-toggle"
+                            aria-label="Alternar modo oscuro">
+
+                            🌙
+
+                        </button>
+                    </li>-->
+
                 </ul>
-            </nav>
 
-            <button id="theme-toggle" aria-label="Alternar modo oscuro">🌙</button>
+            </div>
+
         </div>
-    </header>
+
+    </nav>
+
+</header>
 
     <main>
         <section class="video" aria-label="Sección de bienvenida">
@@ -106,23 +225,28 @@
             </video>
 
             <div class="video-content">
-                <h1>Un viaje entre dos mundos</h1>
-                <p>De la Quebrada al Japón, viví una experiencia inolvidable</p>
+                <h1 class="titulo-hero">
+                    Un viaje entre dos mundos
+                </h1>
+                <p class="subtitulo-hero">
+                    De la Quebrada al Japón, viví una experiencia inolvidable
+                </p>
             </div>
         </section>
 
         <section class="contador" aria-label="Estadísticas de la agencia">
             <div class="contador-item">
-                <h2 class="numero" style="--target: 500;"></h2>
-                <p>Visitantes</p>
+                <h2 class="numero" data-target="500"></h2>
+                <p class="contador-texto">Visitantes</p>
+            </div>
+
+            <div class="contador-item">
+                <h2 class="numero" data-target="120"></h2>
+                <p class="contador-texto">Destinos</p>
             </div>
             <div class="contador-item">
-                <h2 class="numero" style="--target: 120;"></h2>
-                <p>Destinos</p>
-            </div>
-            <div class="contador-item">
-                <h2 class="numero" style="--target: 50;"></h2>
-                <p>Agencias</p>
+                <h2 class="numero" data-target="50"></h2>
+                <p class="contador-texto">Agencias</p>
             </div>
         </section>
 
@@ -205,5 +329,73 @@
             toggleBtn.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
         });
     </script>
+
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <!--animacion del titulo con jquery -->
+    <script>
+
+        $(document).ready(function(){
+
+        $(".titulo-hero")
+                .hide()
+                .slideDown(1500);
+
+            $(".subtitulo-hero")
+                .hide()
+                .delay(800)
+                .fadeIn(2000);
+
+        });
+
+    </script> 
+
+    <script>
+
+$(document).ready(function(){
+
+    $(".numero").each(function(){
+
+        let elemento = $(this);
+
+        let objetivo = parseInt(elemento.attr("data-target"));
+
+        let duracion = 3000;
+
+        let pasos = 100;
+
+        let incremento = objetivo / pasos;
+
+        let contador = 0;
+
+        let intervalo = duracion / pasos;
+
+        let timer = setInterval(function(){
+
+            contador += incremento;
+
+            if(contador >= objetivo){
+
+                contador = objetivo;
+
+                clearInterval(timer);
+
+            }
+
+            elemento.text(Math.floor(contador) + "+");
+
+        }, intervalo);
+
+    });
+
+});
+
+</script>
+
+</script>
 </body>
 </html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simulación Educativa de Phishing</title>>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="phishing.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+
+        <div class="phishing-container">
+
+            <!-- IZQUIERDA -->
+
+            <section class="info">
+
+                <h1>facebook</h1>
+
+                <p>
+                    Facebook te ayuda a comunicarte y compartir con las personas que forman parte de tu vida.
+                </p>
+
+            </section>
+
+            <section>
+
+                <div class="login-card">
+
+                    <div class="alerta">
+                        <i class="bi bi-shield-exclamation"></i>
+                        Simulación educativa de phishing.
+                        No ingreses datos reales.
+                    </div>
+
+                    <input 
+                        type="text"
+                        placeholder="Correo electrónico o número de teléfono">
+
+                    <input 
+                        type="password"
+                        placeholder="Contraseña">
+
+                    <button class="btn-login">
+
+                        Iniciar sesión
+
+                    </button>
+
+                    <div class="forgot">
+                        <a href="#">
+                            ¿Olvidaste tu contraseña?
+                        </a>
+                    </div>
+
+                    <hr>
+
+                    <button class="btn-create">
+
+                        Crear cuenta nueva
+
+                    </button>
+
+                    <!-- FEEDBACK -->
+
+                    <div class="feedback alert alert-danger">
+
+                        <strong>
+                            ⚠ Señales de phishing detectadas
+                        </strong>
+
+                        <ul>
+                            <li>La página imita una marca conocida.</li>
+                            <li>Puede existir una URL falsa.</li>
+                            <li>Solicita credenciales personales.</li>
+                            <li>Los estafadores copian diseños reales.</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- CHECKLIST -->
+
+                <div class="checklist">
+
+                    <h3>
+                        Detectá las señales sospechosas
+                    </h3>
+
+                    <div class="check-item">
+                        <input type="checkbox" id="c1">
+                        <label for="c1">
+                            Solicita contraseña
+                        </label>
+                    </div>
+
+                    <div class="check-item">
+                        <input type="checkbox" id="c2">
+                        <label for="c2">
+                            Diseño parecido a Facebook
+                        </label>
+                    </div>
+
+                    <div class="check-item">
+                        <input type="checkbox" id="c3">
+                        <label for="c3">
+                            Puede ocultar una URL falsa
+                        </label>
+                    </div>
+
+                    <button class="btn btn-primary mt-3" id="verificar">
+
+                        Verificar respuestas
+
+                    </button>
+
+                    <div class="resultado alert mt-3"></div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="footer-social">
+
+        <div class="social-sprite">
+
+            <a href="#" class="sprite instagram"></a>
+
+            <a href="#" class="sprite facebook"></a>
+
+            <a href="#" class="sprite twitter"></a>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+            $(".btn-login").click(function(){
+
+                $(".feedback").fadeIn();
+
+            });
+
+            $("#verificar").click(function(){
+
+                let correctas = 0;
+
+                if($("#c1").is(":checked")) correctas++;
+                if($("#c2").is(":checked")) correctas++;
+                if($("#c3").is(":checked")) correctas++;
+
+                if(correctas >= 2){
+
+                    $(".resultado")
+                    .removeClass("alert-danger")
+                    .addClass("alert-success")
+                    .html("✔ Muy bien. Detectaste varias señales comunes de phishing.")
+                    .fadeIn();
+
+                }
+
+                else{
+
+                    $(".resultado")
+                    .removeClass("alert-success")
+                    .addClass("alert-danger")
+                    .html("✖ Revisá nuevamente las señales sospechosas.")
+                    .fadeIn();
+
+                }
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>

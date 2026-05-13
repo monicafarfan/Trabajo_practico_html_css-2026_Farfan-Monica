@@ -15,7 +15,12 @@
     color: white;
     font-family: 'Georgia', serif;
 }
-
+.banner-precios-container {
+    background: rgb(231, 115, 6);
+    color: white;
+    position: relative;
+    z-index: 1; 
+} 
 
 .css-filtros {
     margin-bottom: 40px;
@@ -69,7 +74,6 @@
     align-items: start;
 }
 
-/* El post destacado ocupa más espacio si la pantalla es grande */
 @media (min-width: 768px) {
     .post-featured {
         grid-column: span 2;
@@ -118,10 +122,8 @@
 /* Para mostrar mientras scrolleop*/
 .reveal-on-scroll {
     opacity: 0;
-    /* La animación se vincula al scroll de la página */
     animation: fade-in-up linear forwards;
     animation-timeline: view();
-    /* Entra cuando el 10% del elemento es visible, termina en el 30% */
     animation-range: entry 10% cover 30%; 
 }
 
@@ -181,7 +183,6 @@
     letter-spacing: 1px;
 }
 
-/* Un adornito extra al avatar (un puntito de "en línea") */
 .css-avatar::after {
     content: '';
     position: absolute;

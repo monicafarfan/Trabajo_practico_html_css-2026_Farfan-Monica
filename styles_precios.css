@@ -12,6 +12,12 @@
 .precios-header h1 {
     color: var(--accent-color);
 }
+.banner-precios-container {
+    background: rgb(231, 115, 6);/* Tu color naranja */
+    color: white;
+    position: relative;
+    z-index: 1; /* Valor bajo para que NO tape a la navbar */
+} 
 
 /*  Tabla comparativa */
 .tabla-precios-wrapper {
@@ -65,7 +71,8 @@
 
 /* Destacar Plan Premium */
 .destacado {
-    background: var(--accent-color) !important;
+    background: #cf643c;
+    color: white;
 }
 
 .destacado-precio {
@@ -73,61 +80,9 @@
     font-size: 1.2rem;
 }
 
-/* tooltips (carteles al pasar por encima) */
-.tooltip {
-    position: relative;
+[data-bs-toggle="tooltip"] {
     cursor: help;
     border-bottom: 1px dotted var(--accent-color);
-    display: inline-block;
-}
-
-/* El globito del tooltip */
-.tooltip::after {
-    content: attr(data-tooltip);
-    position: absolute;
-    bottom: 150%;
-    left: 50%;
-    transform: translateX(-50%) translateY(10px);
-    background: var(--text-color);
-    color: var(--bg-color);
-    padding: 8px 12px;
-    border-radius: 6px;
-    font-size: 0.85rem;
-    white-space: nowrap;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    z-index: 10;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    font-weight: normal;
-}
-
-/* El triangulito (flecha) del tooltip */
-.tooltip::before {
-    content: "";
-    position: absolute;
-    bottom: 110%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-width: 6px;
-    border-style: solid;
-    border-color: var(--text-color) transparent transparent transparent;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease;
-    z-index: 10;
-}
-
-/* Animación al hacer hover */
-.tooltip:hover::after {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(-50%) translateY(0);
-}
-
-.tooltip:hover::before {
-    opacity: 1;
-    visibility: visible;
 }
 
 /* botones para elegir plan*/

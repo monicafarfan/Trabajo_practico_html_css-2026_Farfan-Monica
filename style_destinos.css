@@ -9,6 +9,103 @@
     margin-bottom: 40px;
     color: white;
 }
+/* HEADER */
+
+.custom-navbar {
+    position: sticky !important;
+    top: 0;
+    z-index: 9999 !important; /* Ganale a cualquier sección */
+}
+.hero-destinos,
+.titulo-destinos,
+.banner-destinos {
+    position: relative;
+    z-index: 10; /* Un número bajo para que se queden "atrás" */
+}
+
+.banner-destinos-container {
+    background: rgb(231, 115, 6);/* Tu color naranja */
+    color: white;
+    position: relative;
+    z-index: 1; /* Valor bajo para que NO tape a la navbar */
+} 
+/* LOGO */
+
+.logo{
+
+    color:var(--header-text) !important;
+
+    font-size:1.8rem;
+    font-weight:bold;
+}
+
+/* LINKS */
+
+.navbar-nav .nav-link{
+
+    color:var(--header-text) !important;
+
+    margin-left:10px;
+
+    transition:0.3s ease;
+}
+
+.navbar-nav .nav-link:hover{
+
+    color:var(--accent-color) !important;
+}
+
+/* DROPDOWN */
+
+.dropdown-menu{
+
+    border:none;
+
+    border-radius:12px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+
+    padding:10px;
+}
+
+/* ITEMS */
+/* LINK ACTIVO EN EL DESPLEGABLE */
+.dropdown-item.active {
+    /* Usamos el mismo fondo que tu hover */
+    background-color: var(--accent-color) !important; 
+    color: white !important;
+    
+    /* Si querés que NO tenga fondo y sea igual a los otros 
+       cuando no tienen el mouse encima, usá esto: */
+    /* background-color: transparent !important; */
+    /* color: inherit !important; */
+    
+    font-weight: bold; /* Esto ayuda a saber cuál está seleccionado */
+    border-radius: 8px; /* Para mantener la estética que ya definiste */
+}
+
+.dropdown-item{
+
+    border-radius:8px;
+
+    transition:0.3s ease;
+}
+
+.dropdown-item:hover{
+
+    background:var(--accent-color);
+
+    color:white;
+}
+
+/* LINK ACTIVO */
+
+.nav-link.active{
+
+    color:var(--accent-color) !important;
+
+    font-weight:bold;
+}
 
 .filtros-wrapper input[type="radio"] {
     display: none;
@@ -90,10 +187,17 @@
 }
 
 /* Efecto Zoom en imagen al pasar el mouse */
-.destino-card:hover img {
-    transform: scale(1.15);
+.destino-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
 }
 
+/* Clase que agrega jQuery */
+.zoom-jquery {
+    transform: scale(1.15);
+}
 /* Capa que sube (Overlay) */
 .overlay {
     position: absolute;

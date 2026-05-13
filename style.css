@@ -222,29 +222,22 @@ header {
 }
 
 /* Animación de números*/
-@property --num {
-    syntax: '<integer>';
-    initial-value: 0;
-    inherits: false;
-}
 
 .numero {
     font-size: 48px;
     font-weight: bold;
     color: var(--accent-color);
-    animation: count 3s ease-out forwards;
-    counter-reset: num var(--num);
+    
+}
+.contador-texto {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 10px;
 }
 
-.numero::after {
-    content: counter(num) "+";
-}
-
-@keyframes count {
-    from { --num: 0; }
-    /* El to usa la variable --target definida en linea en el HTML */
-    to { --num: var(--target); }
-}
 
 /* destinos destacados */
 .destinos {
@@ -443,4 +436,105 @@ header {
     border: none;
     filter: grayscale(1) contrast(1.1) brightness(0.8);
     border-radius: 15px;
+}
+
+/*formato celular*/
+@media (max-width: 991px) {
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        padding-top: 20px;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu a {
+        padding: 15px;
+        width: 100%;
+        }
+}
+.custom-navbar {
+    background: #cf643c !important;
+    padding: 15px 30px;
+}
+
+.custom-navbar .logo {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.custom-navbar .nav-link {
+    color: white !important;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #f5d0b5 !important;
+}
+
+.custom-navbar .dropdown-menu {
+    background: #bc7029;
+    border: none;
+    border-radius: 10px;
+}
+
+.custom-navbar .dropdown-item {
+    color: white;
+}
+
+.custom-navbar .dropdown-item:hover {
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
+
+.custom-navbar .dropdown-divider {
+    border-color: rgba(255,255,255,0.2);
+}
+
+.custom-navbar .navbar-toggler {
+    border: 1px solid rgba(255,255,255,0.4);
+}
+
+.custom-navbar .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+#theme-toggle {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    margin-left: 20px;
+    cursor: pointer;
+}
+@media (max-width: 991px) {
+
+    .custom-navbar .navbar-collapse {
+        background: #cf643c;
+        padding: 20px;
+        border-radius: 0 0 15px 15px;
+        margin-top: 10px;
+    }
+
+    .custom-navbar .navbar-nav {
+        gap: 10px;
+    }
+
+    .custom-navbar .nav-link {
+        color: white !important;
+    }
+
+    .custom-navbar .dropdown-menu {
+        background: #bc7029;
+        margin-top: 10px;
+    }
+
 }

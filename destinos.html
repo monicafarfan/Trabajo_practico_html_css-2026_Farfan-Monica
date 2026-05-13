@@ -6,32 +6,222 @@
     <title>Viajes | Destinos</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style_destinos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
     <header>
-        <div class="navbar">
-            <div class="logo">Viajes</div>
-            <nav aria-label="Navegación principal">
-                <ul class="menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="destinos.html" class="active">Destinos</a></li>
-                    <li><a href="agencias.html">Agencias</a></li>
-                    <li><a href="precios.html">Precios</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+
+    <nav class="navbar navbar-expand-lg custom-navbar">
+
+        <div class="container-fluid">
+
+            <!-- LOGO -->
+            <a class="navbar-brand logo" href="index.html">
+                Altura & Sakura
+            </a>
+
+            <!-- BOTÓN HAMBURGUESA -->
+             <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuBootstrap"
+                aria-controls="menuBootstrap"
+                aria-expanded="false"
+                aria-label="Abrir menú">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- MENÚ -->
+            <div class="collapse navbar-collapse" id="menuBootstrap">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <!-- DESTINOS -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+
+                            Destinos
+
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+
+                            <li>
+                                <a class="dropdown-item" href="destinos.html">
+                                    Ver todos los destinos
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Tokio
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Kioto
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Osaka
+                                </a>
+                            </li>
+
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Patagonia
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Región Andina
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <!-- AGENCIAS -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+
+                            Agencias
+
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a class="dropdown-item" href="agencias.html">
+                                    Ver todas las agencias
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Córdoba Tours
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Viajes Centro
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Booking
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <!-- PRECIOS -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+
+                            Precios
+
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a class="dropdown-item" href="precios.html">
+                                    Ver todos los precios
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Económico
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Premium
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Ofertas
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <!-- BLOG -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">
+                            Blog
+                        </a>
+                    </li>
+
+                    <!-- PHISHING -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="phishing.html">
+                            Phishing
+                        </a>
+                    </li>
+
+                    <!-- CONTACTO -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+
                 </ul>
-            </nav>
-            <button id="theme-toggle" aria-label="Alternar modo oscuro">🌙</button>
+
+            </div>
+
         </div>
-    </header>
+
+    </nav>
+
+</header>
 
     <main class="destinos-container">
         
-        <header class="destinos-header">
-              <h1>Explorá por categoría</h1>
-              <p>Aplicá los filtros y encontrá el destino que mejor se adapte a tu forma de viajar.</p>
-        </header>
+        <section class="banner-destinos-container">
+            <div class="destinos-header-content text-center py-5">
+                <h1>Explorá por categoría</h1>
+                <p>Aplicá los filtros y encontrá el destino que mejor se adapte a tu forma de viajar.</p>
+            </div>
+        </section>
 
         <section class="filtros-wrapper">
             
@@ -53,77 +243,77 @@
 
             <div class="masonry-grid">
                 
-    <article class="destino-card cat-cultural h-tall">
-        <img src="https://images.pexels.com/photos/31414242/pexels-photo-31414242.jpeg" alt="Templos de Kioto">
-        <div class="overlay">
-            <h3>Kioto</h3>
-            <p>Templos, geishas y tradición japonesa.</p>
-            <button>Ver paquete</button>
-        </div>
-    </article>
+                <article class="destino-card cat-cultural h-tall">
+                    <img src="https://images.pexels.com/photos/31414242/pexels-photo-31414242.jpeg" alt="Templos de Kioto">
+                    <div class="overlay">
+                        <h3>Kioto</h3>
+                        <p>Templos, geishas y tradición japonesa.</p>
+                        <button>Ver paquete</button>
+                    </div>
+                </article>
 
-    <article class="destino-card cat-playa h-normal">
-        <img src="https://images.pexels.com/photos/8582258/pexels-photo-8582258.jpeg" alt="Playas de Okinawa">
-        <div class="overlay">
-            <h3>Okinawa</h3>
-            <p>Playas paradisíacas y aguas cristalinas.</p>
-            <button>Ver paquete</button>
-        </div>
-    </article>
+                <article class="destino-card cat-playa h-normal">
+                    <img src="https://images.pexels.com/photos/8582258/pexels-photo-8582258.jpeg" alt="Playas de Okinawa">
+                    <div class="overlay">
+                        <h3>Okinawa</h3>
+                        <p>Playas paradisíacas y aguas cristalinas.</p>
+                        <button>Ver paquete</button>
+                    </div>
+                </article>
 
-    <article class="destino-card cat-naturaleza h-tall">
-        <img src="https://images.pexels.com/photos/19763424/pexels-photo-19763424.jpeg" alt="Monte Fuji">
-        <div class="overlay">
-            <h3>Monte Fuji</h3>
-            <p>El ícono natural de Japón.</p>
-            <button>Ver paquete</button>
-        </div>
-    </article>
+                <article class="destino-card cat-naturaleza h-tall">
+                    <img src="https://images.pexels.com/photos/19763424/pexels-photo-19763424.jpeg" alt="Monte Fuji">
+                    <div class="overlay">
+                        <h3>Monte Fuji</h3>
+                        <p>El ícono natural de Japón.</p>
+                        <button>Ver paquete</button>
+                    </div>
+                </article>
 
-    <article class="destino-card cat-gastro h-normal">
-        <img src="https://images.pexels.com/photos/31307561/pexels-photo-31307561.jpeg" alt="Comida japonesa">
-        <div class="overlay">
-            <h3>Osaka</h3>
-            <p>Capital gastronómica de Japón.</p>
-            <button>Ver paquete</button>
-        </div>
-    </article>
+                <article class="destino-card cat-gastro h-normal">
+                    <img src="https://images.pexels.com/photos/31307561/pexels-photo-31307561.jpeg" alt="Comida japonesa">
+                    <div class="overlay">
+                        <h3>Osaka</h3>
+                        <p>Capital gastronómica de Japón.</p>
+                        <button>Ver paquete</button>
+                    </div>
+                </article>
 
-    <article class="destino-card cat-religioso h-normal">
-        <img src="https://images.pexels.com/photos/18292449/pexels-photo-18292449.jpeg" alt="Santuario japonés">
-        <div class="overlay">
-            <h3>Nara</h3>
-            <p>Templos históricos y espiritualidad.</p>
-            <button>Ver paquete</button>
-        </div>
-    </article>
+                <article class="destino-card cat-religioso h-normal">
+                    <img src="https://images.pexels.com/photos/18292449/pexels-photo-18292449.jpeg" alt="Santuario japonés">
+                    <div class="overlay">
+                        <h3>Nara</h3>
+                        <p>Templos históricos y espiritualidad.</p>
+                        <button>Ver paquete</button>
+                    </div>
+                </article>
 
-    <article class="destino-card cat-cultural h-tall">
-        <img src="https://images.pexels.com/photos/36495795/pexels-photo-36495795.jpeg" alt="Tokio ciudad">
-        <div class="overlay">
-            <h3>Tokio</h3>
-            <p>Modernidad, cultura y tecnología.</p>
-            <button>Ver paquete</button>
-        </div>
-    </article>
+                <article class="destino-card cat-cultural h-tall">
+                    <img src="https://images.pexels.com/photos/36495795/pexels-photo-36495795.jpeg" alt="Tokio ciudad">
+                    <div class="overlay">
+                        <h3>Tokio</h3>
+                        <p>Modernidad, cultura y tecnología.</p>
+                        <button>Ver paquete</button>
+                    </div>
+                </article>
 
-    <article class="destino-card cat-naturaleza h-normal">
-        <img src="https://images.pexels.com/photos/36721376/pexels-photo-36721376.jpeg" alt="Cerezos en flor en Japón">
-        <div class="overlay">
-            <h3>Sakura en flor</h3>
-            <p>La magia de los cerezos japoneses en primavera.</p>
-            <button>Ver paquete</button>
-        </div>
-    </article>
+                <article class="destino-card cat-naturaleza h-normal">
+                    <img src="https://images.pexels.com/photos/36721376/pexels-photo-36721376.jpeg" alt="Cerezos en flor en Japón">
+                    <div class="overlay">
+                        <h3>Sakura en flor</h3>
+                        <p>La magia de los cerezos japoneses en primavera.</p>
+                        <button>Ver paquete</button>
+                    </div>
+                </article>
 
-</div>
+            </div>
         </section>
 
         <section class="tabla-section">
             <h2>Tarifario Referencial</h2>
             <p>Compará precios por cantidad de días según el destino.</p>
             
-            <table class="tabla-responsiva">
+            <table class="tabla-responsiva" table>
                 <thead>
                     <tr>
                         <th>Destino</th>
@@ -193,5 +383,84 @@
             toggleBtn.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
         });
     </script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+            $(".filtros-labels label").click(function(){
+
+                let filtro = $(this).attr("for");
+
+                $(".destino-card").hide();
+
+                if(filtro == "cat-todos"){
+
+                    $(".destino-card").show(400);
+
+                }
+
+                else if(filtro == "cat-cultural"){
+
+                    $(".cat-cultural").show(400);
+
+                }
+
+                else if(filtro == "cat-naturaleza"){
+
+                    $(".cat-naturaleza").show(400);
+
+                }
+
+                else if(filtro == "cat-playa"){
+
+                    $(".cat-playa").show(400);
+
+                }
+
+                else if(filtro == "cat-gastro"){
+
+                    $(".cat-gastro").show(400);
+
+                }
+
+                else if(filtro == "cat-religioso"){
+
+                    $(".cat-religioso").show(400);
+
+                }
+
+            });
+
+        });
+
+    </script>
+
+    <script>
+
+$(document).ready(function(){
+
+    $(".destino-card").hover(
+
+        function(){
+
+            $(this).find("img").addClass("zoom-jquery");
+
+        },
+
+        function(){
+
+            $(this).find("img").removeClass("zoom-jquery");
+
+        }
+
+    );
+
+});
+
+</script>
 </body>
 </html>
